@@ -88,4 +88,4 @@ fi
 
 # Start server
 echo "${0}: [$(date -u)] ***Starting server"
-gunicorn --bind 0.0.0.0:8000 medna_metadata.wsgi --workers $CELERYD_NUM_NODES --log-level=info --log-syslog || exit 1
+gunicorn --bind 0.0.0.0:8000 medna_metadata.wsgi --workers $CELERYD_NUM_NODES --log-level=info || exit 1

@@ -149,3 +149,9 @@ docker/nginx.proxycompanion.env
 docker/gunicorn.env
 
 docker-ignore/*
+
+# added for my Mac OS environment
+/celerybeat-schedule.db
+/static
+/media
+.DS_Store

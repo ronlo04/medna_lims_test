@@ -16,6 +16,8 @@ services:
     env_file:
       - 'medna.env'
     volumes:
+      - 'static_volume:/home/django/medna-metadata/static/'
+      - 'media_volume:/home/django/medna-metadata/media/'
       - '../:/home/django/medna-metadata/'
     depends_on:
       - medna_metadata_pgdb
@@ -94,7 +96,7 @@ services:
     build: nginx
     container_name: nginx
     ports:
-      - 80:8080
+      - 80:80
     env_file:
       - 'medna.env'
     volumes:

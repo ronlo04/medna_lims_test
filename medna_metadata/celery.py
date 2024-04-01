@@ -5,7 +5,7 @@ from celery.schedules import crontab
 from dotenv import read_dotenv
 
 # read env file into celery
-env_file = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'docker/gunicorn.env')
+env_file = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'docker/medna.env')
 read_dotenv(env_file)
 
 # Set the default Django settings module for the 'celery' program.
